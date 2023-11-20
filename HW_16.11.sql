@@ -17,7 +17,7 @@
         SELECT *
         FROM Orders
 
-        WHERE EmployeeID = 2 OR EmployeeID = 5
+       WHERE EmployeeID IN (2,5)
       
 4. Дайте короткий ответ на вопрос: что такое проекция в БД и зачем она нужна?
 
