@@ -52,7 +52,7 @@ Shippers.ShipperName AS shipper_name
 FROM Orders
 
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID,
-JOIN Employees ON Orders.CustomerID = Employees.EmployeeID,
+JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID,
 JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
 
 6.Вывести сумму, на которую было отправлено товаров клиентам в Germany
@@ -63,5 +63,6 @@ SELECT
 FROM OrderDetails
 
 JOIN Products ON OrderDetails.ProductID = Products.ProductID
+JOIN Suppliers ON Products.SupplierID = Suppliers.SupplierID
 WHERE Country = 'Germany'
 
