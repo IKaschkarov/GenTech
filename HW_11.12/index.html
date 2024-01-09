@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h2>------------------ Задача 1 ---------------------</h2>
+			<div class="container">
+				<img class="image" src="./img/23.jpg" onclick="zoom()" alt="" />
+			</div>
+		</div>
+		<div class="container">
+			<h2>------------------ Задача 2 ---------------------</h2>
+			<form class="form" action="">
+				<h3 class="title">Frontend</h3>
+				<select class="frontPrice" name="" id="">
+					<option value="1000">HTML</option>
+					<option value="1500">CSS</option>
+					<option value="1500">JavaScript</option>
+				</select>
+				<h4 class="title">Количество:</h4>
+				<input class="frontQuantity" type="text" />
+
+				<h3 class="title">Backend</h3>
+				<select class="backPrice" name="" id="">
+					<option value="1000">Python</option>
+					<option value="1500">C#</option>
+					<option value="3000">Java</option>
+				</select>
+				<h4 class="title">Количество:</h4>
+				<input class="backQuantity" type="text" />
+
+				<h3 class="title">Design</h3>
+				<select class="designPrice" name="" id="">
+					<option value="1000">Figma</option>
+					<option value="1500">PHP</option>
+					<option value="2000">Photoshop</option>
+				</select>
+				<h4 class="title">Количество:</h4>
+				<input class="designQuantity" type="text" />
+
+				
+			<button class="btn" onclick="buy()">Buy</button>
+                
+
+			</form>
+			<h4 class="totalPrice"></h4>
+		</div>
+
+		<script src="./script/script.js"></script>
+	</body>
+</html>
